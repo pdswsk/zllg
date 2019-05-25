@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>左侧导航menu</title>
+<link href="css/css.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/sdmenu.js"></script>
+<script type="text/javascript">
+	// <![CDATA[
+	var myMenu;
+	window.onload = function() {
+		myMenu = new SDMenu("my_menu");
+		myMenu.init();
+	};
+	// ]]>
+</script>
+<style type=text/css>
+html{ SCROLLBAR-FACE-COLOR: #538ec6; SCROLLBAR-HIGHLIGHT-COLOR: #dce5f0; SCROLLBAR-SHADOW-COLOR: #2c6daa; SCROLLBAR-3DLIGHT-COLOR: #dce5f0; SCROLLBAR-ARROW-COLOR: #2c6daa;  SCROLLBAR-TRACK-COLOR: #dce5f0;  SCROLLBAR-DARKSHADOW-COLOR: #dce5f0; overflow-x:hidden;}
+body{overflow-x:hidden; background:url(images/main/leftbg.jpg) left top repeat-y #f2f0f5; width:194px;}
+</style>
+</head>
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;">
+<div id="left-top">
+	<div><img src="images/main/member.gif" width="44" height="44" /></div>
+    <span>用户：admin<br>角色：超级管理员</span>
+</div>
+    <div style="float: left" id="my_menu" class="sdmenu">
+      <div class="collapsed">
+        <span>商城管理</span>
+        <a href="list_of_Goods.html" target="mainFrame" onFocus="this.blur()">商品列表</a>
+        <a href="order_list.html" target="mainFrame" onFocus="this.blur()">订单列表</a>
+        <a href="user_list.html" target="mainFrame" onFocus="this.blur()">用户列表</a>
+        <a href="account_list.html" target="mainFrame" onFocus="this.blur()">会员账户列表</a>
+        <a href="account_list.html" target="mainFrame" onFocus="this.blur()">活动策划</a>
+      </div>
+      <div>
+        <span>账户管理</span>
+        <a href="companies_list.html" target="mainFrame" onFocus="this.blur()">公司列表</a>
+        <a href="shop_list.html" target="mainFrame" onFocus="this.blur()">店铺列表</a>
+        <a href="users_list.html" target="mainFrame" onFocus="this.blur()">账号列表</a>
+        <a href="supplier_list.html" target="mainFrame" onFocus="this.blur()">供应商表</a>
+        <a href="audit_list.html" target="mainFrame" onFocus="this.blur()">审核列表</a>
+      </div>
+      <div>
+        <span>资金管理</span>
+        <a href="store_amount_record.html" target="mainFrame" onFocus="this.blur()">店铺资金记录</a>
+        <a href="main_list.html" target="mainFrame" onFocus="this.blur()">公司资金记录</a>
+        <a href="capital_audit.html" target="mainFrame" onFocus="this.blur()">申请审核</a>
+        <a href="main.html" target="mainFrame" onFocus="this.blur()">收付款</a>
+      </div>
+      <div>
+        <span>仓库管理</span>
+        <a href="bill _sales.html" target="mainFrame" onFocus="this.blur()">订单列表</a>
+        <a href="purchase_order.html" target="mainFrame" onFocus="this.blur()">采购申请</a>
+        <a href="goods_list.html" target="mainFrame" onFocus="this.blur()">商品列表</a>
+        <a href="Import _export _records.html" target="mainFrame" onFocus="this.blur()">出入库记录</a>
+      </div>
+      <div>
+        <span>业务管理</span>
+        <a href="procurement_audit.html" target="mainFrame" onFocus="this.blur()">采购审核</a>
+        <a href="distribution_audit.html" target="mainFrame" onFocus="this.blur()">配货审核</a>
+        <a href="main_list.html" target="mainFrame" onFocus="this.blur()">文件发送</a>
+        <a href="main_info.html" target="mainFrame" onFocus="this.blur()">业务咨询</a>
+      </div>
+      <div>
+        <span>收银</span>
+        <a href="main.html" target="mainFrame" onFocus="this.blur()">收款</a>
+      </div>
+    </div>
+</body>
+</html>

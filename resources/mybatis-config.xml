@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<!-- 通过这个配置文件完成mybatis与数据库的连接 -->
+<configuration>
+	<!-- 引入 database.properties 文件-->
+	<!-- <properties resource="database.properties"/> -->
+	<!-- 配置mybatis的log实现为LOG4J -->
+	<settings>
+		<setting name="logImpl" value="LOG4J" />
+		<!-- 延迟加载 -->
+		<setting name="lazyLoadingEnabled" value="false" />
+		<!-- 映射级别
+		<setting name="autoMappingBehavior" value="NONE" />
+		 -->
+	</settings>
+	
+	<typeAliases >
+		<!-- <typeAlias alias="user" type="kgc.pojo.User"/> -->
+		<package name="com.zllg.pojo"/>
+	</typeAliases>
+
+</configuration>
